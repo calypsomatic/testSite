@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Welcome to a Test Page
 
 You can use the [editor on GitHub](https://github.com/calypsomatic/testSite/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
