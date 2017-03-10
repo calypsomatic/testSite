@@ -1,12 +1,15 @@
-## Welcome to a Test Page
-Blar de blar blar
+## i cry while u sleep
+but also while you're awake
 
-### Markdown
+### buttons here
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+image here
 
-```markdown
-Syntax highlighted code block
+### buttons here
+
+comments here
+
+links on the sidebar?
 
 # Header 1
 ## Header 2
