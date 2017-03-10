@@ -18,12 +18,7 @@ links on the sidebar?
     </li>
   {% endfor %}
 </ul>
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
+![My helpful screenshot]({{ site.url }}/assets/bad.jpg)
 
 **Bold** and _Italic_ and `Code` text
 
