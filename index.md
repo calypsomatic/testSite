@@ -9,7 +9,7 @@ but also while you're awake
 
 ### buttons here
 {%assign firstpost = site.posts.last %}
- <a href="{{ post.url | prepend: site.github.url }}"> First
+ <a href="{{ firstpost.url | prepend: site.github.url }}"> First
  Oh wait maybe some pagination
  
 
