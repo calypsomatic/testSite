@@ -18,7 +18,7 @@ links on the sidebar?
     </li>
   {% endfor %}
 </ul>
-![My helpful screenshot](http://giphy.com/gifs/thief-rug-VXMnF0DYmvita)
+![My helpful screenshot](//giphy.com/embed/VXMnF0DYmvita)
 
 **Bold** and _Italic_ and `Code` text
 
