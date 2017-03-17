@@ -1,16 +1,17 @@
 # i cry while u sleep
 but also while you're awake
 
-{% assign latest = site.posts.first %}
- <a href="{{ latest.url | prepend: site.github.url }}">
-      {{ latest.title }}
-      {{ latest.content }}
+{% assign thispost = site.posts.first %}
+ <a href="{{ thispost.url | prepend: site.github.url }}">
+      {{ thispost.title }}
+      {{ thispost.content }}
 
 
 ### buttons here
 {%assign firstpost = site.posts.last %}
-{%assign prev = firstpost.previous%}
-{%assign next = firstpost.next%}
+{%assign prev = thispost.previous%}
+{%assign next = thispost.next%}
+{% assign latest = site.posts.first %}
  <a href="{{ firstpost.url | prepend: site.github.url }}"> First
  <a href="{{ prev.url | prepend: site.github.url }}"> Prev
  <a href="{{ next.url | prepend: site.github.url }}"> Next
