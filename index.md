@@ -3,8 +3,8 @@ but also while you're awake
 
 {% assign post = site.posts.first %}
  <a href="{{ post.url }}">
-      <h3>{{ post.title }}</h3>
-      <div>{{ post.content |truncatehtml | truncatewords: 60 }}</div>
+      {{ post.title }}
+      {{ post.content |truncatehtml | truncatewords: 60 }}
   </a>
 
 
