@@ -18,7 +18,7 @@ links on the sidebar?
     </li>
   {% endfor %}
 </ul>
-![My helpful screenshot]({{site.github.url }}/_assets/bad.jpeg)
+![My helpful screenshot]({/_assets/bad.jpeg)
 
 **Bold** and _Italic_ and `Code` text
 
