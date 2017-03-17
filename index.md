@@ -2,10 +2,9 @@
 but also while you're awake
 
 {% assign post = site.posts.first %}
- <a href="{{ post.url }}">
+ <a href="{{ post.url | prepend: site.github.url }}">
       {{ post.title }}
       {{ post.content |truncatehtml | truncatewords: 60 }}
-  </a>
 
 
 ![OK THIS IS THE ONE]({{site.github.url}}/assets/bad.jpeg)
