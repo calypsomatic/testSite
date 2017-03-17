@@ -1,4 +1,4 @@
-## i cry while u sleep
+# i cry while u sleep
 but also while you're awake
 
 {% assign post = site.posts.first %}
@@ -7,16 +7,15 @@ but also while you're awake
       {{ post.content |truncatehtml | truncatewords: 60 }}
 
 
-![OK THIS IS THE ONE]({{site.github.url}}/assets/bad.jpeg)
 ### buttons here
+{%assign firstpost = site.posts.last %}
+ <a href="{{ post.url | prepend: site.github.url }}"> First
+ Oh wait maybe some pagination
+ 
 
-image here
-
-### buttons here
-
-comments here
-
-links on the sidebar?
+comment?
+patreon link?
+sidebar?
 
 <ul>
   {% for post in site.posts %}
