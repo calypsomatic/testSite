@@ -4,8 +4,9 @@ but also while you're awake
 {% assign thispost = site.posts.first %}
   <h3>    {{ thispost.title }}</h3>
   <h5> {{thispost.date}} </h5>
+  <section>
       {{ thispost.content }}
-
+</section>
 
 ### buttons here
 {%assign firstpost = site.posts.last %}
