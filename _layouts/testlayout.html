@@ -2,14 +2,12 @@
 <html lang="en">
 
   <body>
-    <section class="page-wrapper">
+     <section class="post-wrapper">
+      <p class="post-date">{{ page.date }}</p>
+    </section>
+    <h1 class="post-title">Building a blog using Jekyll. Creating custom layouts</h1>
+    <article class="post-content">
       {{content}}
-    </section>
-    <section>
-      {{page.date}}
-    </section>
-    <section>
-      {{page.title}}
-    </section>
+    </article>
   </body>
 </html>
