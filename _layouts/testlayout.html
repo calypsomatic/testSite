@@ -2,16 +2,17 @@
 <html lang="en">
 
   <body>
-     <section class="post-wrapper">
-      <p class="post-date">{{ page.date }}</p>
-    </section>
-    <h1 class="post-title">Building a blog using Jekyll. Creating custom layouts</h1>
+    <h3 class="post-title">{{page.title}}</h3>
+    <h5> {{page.date}} </h5>
     <article class="post-content">
       {{content}}
     </article>
     <a href="{{ site.posts.last.url | prepend: site.github.url }}"> First</a>
     <a href="{{ page.previous.url | prepend: site.github.url }}"> Prev</a>
+    <a href="#">Archive</a>
     <a href="{{ page.next.url | prepend: site.github.url }}"> Next</a>
     <a href="{{ site.posts.first.url | prepend: site.github.url }}"> Latest</a>
+    
+    <div> Patreon link, someday </div>
   </body>
 </html>
