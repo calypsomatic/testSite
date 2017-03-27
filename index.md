@@ -2,8 +2,8 @@
 but also while you're awake
 
 {% assign thispost = site.posts.first %}
- <a href="{{ thispost.url | prepend: site.github.url }}">
-      {{ thispost.title }}
+  <h3>    {{ thispost.title }}</h3>
+  <h5> {{thispost.date}} </h5>
       {{ thispost.content }}
 
 
