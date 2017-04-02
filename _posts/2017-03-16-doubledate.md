@@ -2,5 +2,4 @@
 layout: testlayout
 title: Double?
 ---
-
-What happens with the same date??
+![Crisis]({{site.github.url}}/assets/crisis.png)
