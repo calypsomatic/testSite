@@ -1,6 +1,6 @@
---------
+---
 layout: testlayout
---------
+---
 
 <link rel="stylesheet" href="{{ site.baseurl }}/includes/comic.css">
 
