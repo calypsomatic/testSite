@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 <link rel="stylesheet" href="{{ site.baseurl }}/includes/comic.css">
 
 # i cry while u sleep
