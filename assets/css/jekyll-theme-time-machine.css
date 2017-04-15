@@ -5,7 +5,6 @@
 body {
   font-size: 15px;
   font-family: Arial, Arial, Helvetica, sans-serif;
-  line-height: 1.5;
   background: #D1D1D1;
 }
 
@@ -57,6 +56,11 @@ p.tagline {
   background-color: #fff;
 }
 
+.comic {
+  max-width: 750px;
+  border-style: solid;
+}
+
 .download-bar {
   background: #222;
   border: 5px solid #444;
@@ -64,6 +68,16 @@ p.tagline {
   margin: 0 -35px 20px;
   position: relative;
 }
+
+.site-title {
+  text-align: center !important;
+  color: #88C6EF;
+}
+
+ .site-subtitle {
+  text-align: center;
+  color: #88C6EF;
+ }
 
 .download-bar .inner {
   overflow: hidden;
@@ -481,5 +495,6 @@ footer .owner p a {
   max-width: 100%;
   box-sizing: border-box;
 }
+
 
 @import "rouge-base16-dark";

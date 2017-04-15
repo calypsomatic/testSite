@@ -24,24 +24,38 @@
     <div id="container">
       <div id="main" role="main">
         <div class="download-bar">
-        <span class="blc"></span><span class="trc"></span>
+        <span class="blc"></span>     <h2 class="site-title"> i cry while you're asleep </h2>
+     <h6 class="site-subtitle"> but also while you're awake </h6>   
+<span class="trc"></span>
         </div>
         <article class="markdown-body">
-          {% assign thispost = site.posts.first %}
-  <h3>    {{ thispost.title }}</h3>
-  <h5> {{thispost.date}} </h5>
-  <section>
-      {{ content }}
-</section>
+  <h4>    {{ page.title }}</h3>
+  <h6> {{page.date}} </h5>
           {%assign firstpost = site.posts.last %}
-{%assign prev = thispost.previous%}
-{%assign next = thispost.next%}
-{% assign latest = site.posts.first %}
+{%assign prev = page.previous%}
+{%assign next = page.next%}
+{% assign latest = site.posts.first %}  
  <a href="{{ firstpost.url | prepend: site.github.url }}"> First
  <a href="{{ prev.url | prepend: site.github.url }}"> Prev
  <a href="{{ next.url | prepend: site.github.url }}"> Next
- <a href="{{ latest.url | prepend: site.github.url }}"> Latest
+ <a href="{{ latest.url | prepend: site.github.url }}"> Latest </a>
+<section>
+      {{ content }}
+</section>
+
+ <a href="{{ firstpost.url | prepend: site.github.url }}"> First
+ <a href="{{ prev.url | prepend: site.github.url }}"> Prev
+ <a href="{{ next.url | prepend: site.github.url }}"> Next
+ <a href="{{ latest.url | prepend: site.github.url }}"> Latest </a>
         </article>
+        <section>
+<span style="align:center;"> Dudes I totally have a Patreon </span>
+<br>
+ <span style="font-size:11px;align:right;"> (The money goes to charity.) </span>
+<br>
+<a href="https://www.patreon.com/bePatron?u=608267" data-patreon-widget-type="become-patron-button">Become a Patron!</a> 
+<script async src="https://cdn6.patreon.com/becomePatronButton.bundle.js"></script>
+        </section>
       </div>
     </div>
     <footer>
