@@ -61,6 +61,14 @@ p.tagline {
   border-style: solid;
 }
 
+#sidebar {
+  width: 200px; 
+  float: left;
+  padding-top: 250px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
 .download-bar {
   background: #222;
   border: 5px solid #444;
