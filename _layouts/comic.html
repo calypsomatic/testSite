@@ -37,9 +37,11 @@
 <span class="trc"></span>
         </div>
         <article class="markdown-body">
+          {%assign page = site.posts.first %}
+
   <h4>    {{ page.title }}</h3>
   <h6> {{page.date | date: "%-d %B %Y"}} </h5>
-          {%assign firstpost = site.posts.last %}
+      {%assign firstpost = site.posts.last %}
 {%assign prev = page.previous%}
 {%assign next = page.next%}
 {% assign latest = site.posts.first %}  
@@ -51,7 +53,7 @@
  <a class="navButton" href="{{ latest.url | prepend: site.github.url }}"> Latest </a>
 </div>
 <section>
-      {{ content }}
+      {{ page.content }}
 </section>
 
 <div style="text-align: center">
