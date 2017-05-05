@@ -38,23 +38,29 @@
         </div>
         <article class="markdown-body">
   <h4>    {{ page.title }}</h3>
-  <h6> {{page.date}} </h5>
+  <h6> {{page.date | date: "%-d %B %Y"}} </h5>
           {%assign firstpost = site.posts.last %}
 {%assign prev = page.previous%}
 {%assign next = page.next%}
 {% assign latest = site.posts.first %}  
- <a href="{{ firstpost.url | prepend: site.github.url }}"> First
- <a href="{{ prev.url | prepend: site.github.url }}"> Prev
- <a href="{{ next.url | prepend: site.github.url }}"> Next
- <a href="{{ latest.url | prepend: site.github.url }}"> Latest </a>
+<div style="text-align: center">
+ <a class="navButton" href="{{ firstpost.url | prepend: site.github.url }}"> First</a>
+ <a class="navButton" href="{{ prev.url | prepend: site.github.url }}"> Prev</a>
+<a class="navButton" href="#"> Archive</a>
+ <a class="navButton" href="{{ next.url | prepend: site.github.url }}"> Next</a>
+ <a class="navButton" href="{{ latest.url | prepend: site.github.url }}"> Latest </a>
+</div>
 <section>
       {{ content }}
 </section>
 
- <a href="{{ firstpost.url | prepend: site.github.url }}"> First
- <a href="{{ prev.url | prepend: site.github.url }}"> Prev
- <a href="{{ next.url | prepend: site.github.url }}"> Next
- <a href="{{ latest.url | prepend: site.github.url }}"> Latest </a>
+<div style="text-align: center">
+ <a class="navButton" href="{{ firstpost.url | prepend: site.github.url }}"> First</a>
+ <a class="navButton" href="{{ prev.url | prepend: site.github.url }}"> Prev</a>
+<a class="navButton" href="#"> Archive</a>
+ <a class="navButton" href="{{ next.url | prepend: site.github.url }}"> Next</a>
+ <a class="navButton" href="{{ latest.url | prepend: site.github.url }}"> Latest </a>
+</div>
         </article>
         <section>
 <span style="align:center;"> Dudes I totally have a Patreon </span>
