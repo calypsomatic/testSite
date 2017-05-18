@@ -60,14 +60,19 @@ p.tagline {
   max-width: 750px;
   border-style: solid;
   left: 50%;
+  display:block; 
+  margin:auto;
 }
 
 #sidebar {
   width: 200px; 
-  float: left;
-  padding-top: 250px;
-  padding-left: 50px;
-  padding-right: 50px;
+  top: 175px;
+  left: 2%;
+  position: absolute;
+  display: inline-block;
+  border: black solid;
+  background-color: #3a8a9e;
+  min-height: 100px;
 }
 
 .download-bar {

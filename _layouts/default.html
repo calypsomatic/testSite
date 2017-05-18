@@ -17,18 +17,20 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
 
 </head>
-<div id="sidebar">
-  Can I do this?
-  Will it just
-  go all the way down th
-  epage if I let it
-  or does it just 
-  push the body down?
-</div>
 
 <body>
 
   <div class="wrapper">
+
+    <div id="sidebar">
+      Can I do this?
+      Will it just
+      go all the way down th
+      epage if I let it
+      or does it just 
+      push the body down?
+    </div>
+
     <div id="container">
       <div id="main" role="main">
         <div class="download-bar">
@@ -46,11 +48,11 @@
 <div style="text-align: center">
  <a class="navButton" href="{{ firstpost.url | prepend: site.github.url }}"> First</a>
  <a class="navButton" href="{{ prev.url | prepend: site.github.url }}"> Prev</a>
-<a class="navButton" href="#"> Archive</a>
+<a class="navButton" href="/archive.html"> Archive</a>
  <a class="navButton" href="{{ next.url | prepend: site.github.url }}"> Next</a>
  <a class="navButton" href="{{ latest.url | prepend: site.github.url }}"> Latest </a>
 </div>
-<section>
+<section >
       {{ content }}
 </section>
 
