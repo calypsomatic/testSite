@@ -1,5 +1,6 @@
 ---
-layout: default
+layout: comic
 title: Double?
+alt: Crisis
+image: crisis.png
 ---
-![Crisis]({{site.github.url}}/assets/comics/crisis.png){:class="comic"}

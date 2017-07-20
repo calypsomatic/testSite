@@ -1,0 +1,41 @@
+---
+layout: baselayout
+---
+
+        <article class="markdown-body">
+          {%assign page = site.posts.first %}
+
+  <h4>    {{ page.title }}</h3>
+  <h6> {{page.date | date: "%-d %B %Y"}} </h5>
+      {%assign firstpost = site.posts.last %}
+{%assign prev = page.previous%}
+{%assign next = page.next%}
+{% assign latest = site.posts.first %}  
+<div style="text-align: center">
+ <a class="navButton" href="{{ firstpost.url | prepend: site.github.url }}"> First</a>
+ <a class="navButton" href="{{ prev.url | prepend: site.github.url }}"> Prev</a>
+<a class="navButton" href="{{site.baseurl}}/archive.html"> Archive</a>
+ <a class="navButton" href="{{ next.url | prepend: site.github.url }}"> Next</a>
+ <a class="navButton" href="{{ latest.url | prepend: site.github.url }}"> Latest </a>
+</div>
+<section>
+      {{ page.content }}
+</section>
+
+<div style="text-align: center">
+ <a class="navButton" href="{{ firstpost.url | prepend: site.github.url }}"> First</a>
+ <a class="navButton" href="{{ prev.url | prepend: site.github.url }}"> Prev</a>
+<a class="navButton" href="#"> Archive</a>
+ <a class="navButton" href="{{ next.url | prepend: site.github.url }}"> Next</a>
+ <a class="navButton" href="{{ latest.url | prepend: site.github.url }}"> Latest </a>
+</div>
+        </article>
+        <section>
+<span style="align:center;"> Dudes I totally have a Patreon </span>
+<br>
+ <span style="font-size:11px;align:right;"> (The money goes to charity.) </span>
+<br>
+<a href="https://www.patreon.com/bePatron?u=608267" data-patreon-widget-type="become-patron-button">Become a Patron!</a> 
+<script async src="https://cdn6.patreon.com/becomePatronButton.bundle.js"></script>
+        </section>
+      </div>

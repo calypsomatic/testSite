@@ -1,0 +1,28 @@
+<article class="markdown-body">
+
+{% if page.index %}
+	{% assign page = site.posts.first %}
+{% endif %}
+
+  <h4>    {{ page.title }}</h3>
+  <h6> {{page.date | date: "%-d %B %Y"}} </h5>
+
+  {%assign firstpost = site.posts.last %}
+  {%assign prev = page.previous%}
+  {%assign next = page.next%}
+  {% assign latest = site.posts.first %}  
+
+  {% include navButtons.html%}
+
+	<section >
+		<br>
+	  	<img title={{page.alt}} src={{site.github.url}}/assets/comics/{{page.image}} class="comic"}/>
+		<br>
+    
+    	{{page.comment}}
+
+	</section>
+
+	{% include navButtons.html%}
+
+</article>
