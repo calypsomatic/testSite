@@ -3,9 +3,7 @@
 {% if page.index %}
 	{% assign page = site.posts.first %}
 {% endif %}
-
-  <h4>    {{ page.title }}</h3>
-  <h6> {{page.date | date: "%-d %B %Y"}} </h5>
+ 
 
   {%assign firstpost = site.posts.last %}
   {%assign prev = page.previous%}
@@ -16,12 +14,20 @@
 
 	<section >
 		<br>
+  <div class="comic-title">    {{ page.title }}</div> <div class="comic-date"> {{page.date | date: "%-d %B %Y"}} </div>
 	  	<img title={{page.alt}} src={{site.github.url}}/assets/comics/{{page.image}} class="comic"}/>
 		<br>
     
-    	{{page.comment}}
-
-	</section>
+    <h3 style="text-align: center">Comments</h3>
+    <div class="comments">
+      {% if page.comment %}
+        {% for comment in page.comment %}
+          {% include comment.html comment = comment %}
+        {% endfor %}
+      {% endif %}
+    </div>
+	
+  </section>
 
 	{% include navButtons.html%}
 

@@ -9,7 +9,6 @@ body {
 }
 
 a {
-  color: #63a52a;
   text-decoration: none;
   transition: opacity ease-in-out 0.3s;
   -webkit-transition: opacity ease-in-out 0.3s;  /* Safari <=6.1, Android <= 4.3 */
@@ -17,7 +16,7 @@ a {
 
 a:hover {
   text-decoration: underline;
-  color: #90D355;
+  color: blue;
 }
 
 code, pre {
@@ -31,6 +30,14 @@ h1.title {
   font-style: italic;
   font-family:Georgia, serif;
   text-align: center;
+}
+
+.subtitle {
+  font-size: 35px;
+  font-weight: bold;
+  font-family:Georgia, serif;
+  display: inline;
+  float: left;
 }
 
 .wrapper {
@@ -62,6 +69,7 @@ p.tagline {
   left: 50%;
   display:block; 
   margin:auto;
+  border: 3px solid black;
 }
 
 #sidebar {
@@ -73,6 +81,16 @@ p.tagline {
   border: black solid;
   background-color: #3a8a9e;
   min-height: 100px;
+  font-family: serif;
+  font-size: 16px;
+}
+
+#sidebar a{
+  color: black;
+}
+
+#sidebar a:hover{
+  color: silver ;
 }
 
 .download-bar {
@@ -261,9 +279,9 @@ a.code:hover {
 }
 
 a.navButton {
-  -moz-box-shadow: 3px 4px 0px 0px #899599;
-  -webkit-box-shadow: 3px 4px 0px 0px #899599;
-  box-shadow: 3px 4px 0px 0px #899599;
+  -moz-box-shadow: 2px 3px 0px 0px #899599;
+  -webkit-box-shadow: 2px 3px 0px 0px #899599;
+  box-shadow: 2px 3px 0px 0px #899599;
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #ededed), color-stop(1, #bab1ba));
   background:-moz-linear-gradient(top, #ededed 5%, #bab1ba 100%);
   background:-webkit-linear-gradient(top, #ededed 5%, #bab1ba 100%);
@@ -275,17 +293,18 @@ a.navButton {
   -moz-border-radius:15px;
   -webkit-border-radius:15px;
   border-radius:15px;
-  border:1px solid #d6bcd6;
+/*  border:1px solid #d6bcd6;*/
   display:inline-block;
   text-align: left;
   cursor:pointer;
   color:#3a8a9e;
   font-family:Arial;
-  font-size:15px;
-  padding:7px 20px;
-  text-decoration:none;
-  text-shadow:0px 1px 0px #e1e2ed;
+  font-size:10px;
+  padding:5px 10px;
+  margin: 5px;
+  font-weight: bold;
 }
+
 .myButton:hover {
   background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #bab1ba), color-stop(1, #ededed));
   background:-moz-linear-gradient(top, #bab1ba 5%, #ededed 100%);
@@ -405,7 +424,7 @@ footer .owner p a {
 
 .markdown-body h2 {
   font-size: 24px;
-  color: #557398;
+ /* color: #557398;*/
 }
 
 .markdown-body h3 {
@@ -551,6 +570,77 @@ footer .owner p a {
 .markdown-body img {
   max-width: 100%;
   box-sizing: border-box;
+}
+
+.archive table {
+  margin-left: -20px;
+  margin-right: -20px;
+  margin-top: -20px;
+  padding-top: 50px;
+}
+
+.archive tbody {
+}
+
+.archive table td * {
+  margin: 0;
+}
+
+.archive td {
+  padding: 5px;
+}
+
+
+.archive td:last-child {
+  border-right: 0 none;
+}
+
+.archive th {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: left;
+  padding: 5px;
+}
+
+.archive tt {
+  color: #d6d6d6;
+  padding: 2px 3px;
+}
+
+.comments {
+ /* border: 1px solid #88C6EF;*/
+  border: 3px solid black;
+  margin-bottom: 20px;
+  margin-right: 10%;
+  margin-left: 10%;
+  background-color: grey;
+}
+
+.comment {
+  padding: 15px;
+  border: 1px solid;
+  margin: 10px;
+  font-family: serif;
+  background-color: white;
+}
+
+.comment p.title {
+  font-size: x-small;
+}
+
+.comic-title {
+  font-size: 30px;
+  font-weight: bold;
+  padding-bottom: 3px;
+  margin-left: 20px;
+  font-family: serif;
+}
+
+.comic-date {
+  font-size: x-small;
+  padding-bottom: 3px;
+  margin-left: 20px;
+  font-family: serif;
 }
 
 
