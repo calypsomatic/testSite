@@ -1,0 +1,32 @@
+---
+title: Character Bios
+layout: default
+---
+
+<div class="subtitle">
+	{{page.title}}
+</div>
+<div style="display: inline;float: right;">
+	<a class="navButton" href="/index.html"> Home </a>
+</div>
+<br>
+
+
+<br>
+<div style="display: inline;float: left; font-family: serif;">
+	<p>
+		A lot of my comics are sort of commentary on modern social phenomena that I experience or embody, and so I use myself as the stand in and generic non-persons to interact with.  But since it is also 100% true events, some of the other characters are actual people.
+	</p>
+</div>
+<br>
+<div style="margin-left: 50px; margin-right: 50px; margin-top: 20px; margin-bottom: 20px;">
+<table class="bio">
+{% tablerow post in site.bios  cols:3%}
+		<table>
+			<tr> <td >{{ post.title }}</td> </tr>
+        	<tr> <td> <img title={{post.title}} src={{site.github.url}}/assets/thumbnails/{{post.image}} 		class="thumbnail"}/></td></tr>
+        	<tr> <td>{{ post.bio }}</td></tr>
+    </table>
+{% endtablerow %}
+</table>
+</div>

@@ -15,8 +15,11 @@
 	<section >
 		<br>
   <div class="comic-title">    {{ page.title }}</div> <div class="comic-date"> {{page.date | date: "%-d %B %Y"}} </div>
-	  	<img title={{page.alt}} src={{site.github.url}}/assets/comics/{{page.image}} class="comic"}/>
+	  	<img title="{{page.alt}}" src={{site.github.url}}/assets/comics/{{page.image}} class="comic"}/>
 		<br>
+
+  {% include navButtons.html%}
+
     
     <h3 style="text-align: center">Comments</h3>
     <div class="comments">

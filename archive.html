@@ -15,9 +15,9 @@ layout: default
 <div style="margin-left: 50px; margin-right: 50px; margin-top: 20px; margin-bottom: 20px;">
 <table class="archive">
 {% tablerow post in site.posts  cols:6%}
-        <a style="font-family: serif;" href="{{ site.prefix  }}{{ post.url }}">{{ post.title }}<br>
-        <img title={{post.alt}} src={{site.github.url}}/assets/thumbnails/{{post.image}} style="width: 75px; height: 75px; margin-left: 7px; margin-top: 5px;"}/></a>
-        <div class="date" style="font-size: smaller; font-family: serif;">{{ post.date | date_to_string }}</div>
+        <a href="{{ site.prefix  }}{{ post.url }}">{{ post.title }}<br>
+        <img title={{post.alt}} src={{site.github.url}}/assets/thumbnails/{{post.image}} class="thumbnail"}/></a>
+        <div class="date" style="font-size: smaller;">{{ post.date | date_to_string }}</div>
 {% endtablerow %}
 </table>
 </div>
