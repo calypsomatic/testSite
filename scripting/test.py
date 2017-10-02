@@ -16,6 +16,8 @@ archivepage = wget.download(url)
 
 comiclist = []
 
+numComicsToDownload = 30
+
 with open(archivepage) as f:
     for line in f:
 		#all the comics are in a line in a table
@@ -52,7 +54,7 @@ filestoremove = []
 
 for comic in comiclist:
 	#Go to the page for this comic and get the data
-	if int(comic["num"]) < 5:
+	if int(comic["num"]) < numComicsToDownload:
 		comicurl=baseurl+comic["num"]
 		comicpage = wget.download(comicurl)
 		filestoremove.append(comicpage)
@@ -91,7 +93,7 @@ for comic in comiclist:
 					altstartindex = linkstart.find("title=")
 					altendindex = linkstart.find("\" id=")
 					#and here's alt-text!
-					alt = linkstart[altstartindex+7:altendindex]
+					alt = linkstart[altstartindex+7:altendindex].replace(':', '&#58;')
 					comiclist[int(comic["num"])-1]["alt"] = alt
 				if line.find("class=\"commentheader") != -1:
 					commentHeaderFound = commentHeaderFound + 1
@@ -101,11 +103,11 @@ for comic in comiclist:
 		
 					
 #now let's build a page!
-directory = "../comics/_posts/"
+directory = "../_posts/"
 outdirectory = "../assets/comics/"
 thumbnaildirectory = "../assets/thumbnails/"
 for comic in comiclist:
-	if int(comic["num"]) < 5:
+	if int(comic["num"]) < numComicsToDownload:
 		#get the actual image
 		if comic.get("image") is not None:
 			img = wget.download(comic.get("image"), out=outdirectory + comic.get("title").replace(" ", "-") + ".jpeg")

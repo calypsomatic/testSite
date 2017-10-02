@@ -38,6 +38,14 @@ h1.title {
   font-family:Georgia, serif;
   display: inline;
   float: left;
+  padding: 5px;
+}
+
+.paragraph {
+  display: inline;
+  float: left; 
+  font-family: serif;
+  padding: 5px;
 }
 
 .wrapper {
@@ -597,10 +605,9 @@ footer .owner p a {
 }
 
 .archive table {
-  margin-left: -20px;
-  margin-right: -20px;
-  margin-top: -20px;
-  padding-top: 50px;
+  margin-left: 7px;
+  margin-right: 7px;
+  margin-top:   7px;
   font-family: serif;
 }
 
@@ -615,15 +622,42 @@ footer .owner p a {
   padding: 5px;
 }
 
+.archive-title {
+  height: 30px;
+  font-family: serif;
+}
+
 .bio td {
   padding: 5px;
-  font-size: small;
+  width: 30%;
 }
 
 .bio table {
-  display: block;
-table-layout: fixed;
-font-family: serif;
+  table-layout: fixed;
+  font-family: serif;
+  height: 100%;
+}
+
+.bio-name {
+  font-size: medium;
+  font-weight: bold;
+  height: 30px;
+  text-decoration: underline;
+}
+
+.bio-image {
+  height: 80px;
+  text-align: center;
+}
+
+.bio-image .thumbnail{
+  border: black 2px solid;
+}
+
+
+.bio-info {
+  font-size: small;
+  height: 50px;
 }
 
 

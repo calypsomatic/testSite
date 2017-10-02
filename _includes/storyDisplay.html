@@ -1,0 +1,49 @@
+<article class="markdown-body">
+
+
+	<section >
+		<br>
+ <div class="subtitle">   {{ page.title }}</div> 
+  <div style="display: inline;float: right;">
+  <a class="navButton" href="/index.html"> Home </a>
+</div>
+<br>
+<br>
+  {% capture firstpost %}
+    {{ page.baseurl | append: '1' | append: '.html' }}
+  {% endcapture %}
+  {%assign prevNum = page.pageNumber | minus: 1 %}
+  {% if prevNum == 0 %}
+    {% assign prevNum = 1 %}
+  {% endif %}
+  {%assign nextNum = page.pageNumber | plus: 1 %}
+  {% if nextNum > page.numPages %}
+    {% assign nextNum = page.numPages %}
+  {% endif %}
+  {% capture prev %}
+    {{page.baseurl | append: prevNum | append: '.html'}}
+    {% endcapture %}
+  {% capture next %}
+    {{page.baseurl | append: nextNum | append: '.html'}}
+    {% endcapture %}
+  {% capture latest %}
+    {{page.baseurl | append: page.numPages | append: '.html'}}
+    {% endcapture %}
+
+  {%assign next2 = page.baseurl | append: page.pageNumber %}
+  {%assign next3 = next2 | append: '.html' %}
+<br>
+  {% include storyNavButtons.html %}
+  <br>
+  {%assign img = page.image | append: page.pageNumber | append: page.imageType %}
+  <a href="{{next}}">
+      <img title="{{page.title}}" src={{site.github.url}}{{img}} class="comic" style="max-height:700px;"}/>
+    </a>
+  <br>
+
+  {% include storyNavButtons.html%}
+
+    	
+  </section>
+
+</article>

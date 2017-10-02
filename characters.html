@@ -13,19 +13,20 @@ layout: default
 
 
 <br>
-<div style="display: inline;float: left; font-family: serif;">
+<div class="paragraph">
 	<p>
-		A lot of my comics are sort of commentary on modern social phenomena that I experience or embody, and so I use myself as the stand in and generic non-persons to interact with.  But since it is also 100% true events, some of the other characters are actual people.
+		A lot of my comics are sort of commentary on modern social phenomena that I experience or embody, and so I use myself as the stand in and generic non-persons to interact with.  But I sometimes surreptitiously slip in actual people with names.  Here are the ones that have showed up multiple times so far. 
+		<p style="font-size:small"> Ssssshhh don't let them know I'm drawing them.  </p>
 	</p>
 </div>
 <br>
 <div style="margin-left: 50px; margin-right: 50px; margin-top: 20px; margin-bottom: 20px;">
 <table class="bio">
-{% tablerow post in site.bios  cols:3%}
-		<table>
-			<tr> <td >{{ post.title }}</td> </tr>
-        	<tr> <td> <img title={{post.title}} src={{site.github.url}}/assets/thumbnails/{{post.image}} 		class="thumbnail"}/></td></tr>
-        	<tr> <td>{{ post.bio }}</td></tr>
+{% tablerow post in site.bios  cols:3 %}
+		<table class="bio">
+			<tr> <td class="bio-name">{{ post.title }}</td> </tr>
+        	<tr> <td class="bio-image"> <img title={{post.title}} src={{site.github.url}}/assets/bios/{{post.image}} 		class="thumbnail"}/></td></tr>
+        	<tr> <td class="bio-info">{{ post.bio }}</td></tr>
     </table>
 {% endtablerow %}
 </table>

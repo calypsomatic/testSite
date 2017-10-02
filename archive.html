@@ -10,14 +10,18 @@ layout: default
 	<a class="navButton" href="/index.html"> Home </a>
 </div>
 <br>
+<br>
 
-
-<div style="margin-left: 50px; margin-right: 50px; margin-top: 20px; margin-bottom: 20px;">
+<div style="margin-left:20px; margin-top: 20px; margin-bottom: 20px;">
 <table class="archive">
-{% tablerow post in site.posts  cols:6%}
-        <a href="{{ site.prefix  }}{{ post.url }}">{{ post.title }}<br>
-        <img title={{post.alt}} src={{site.github.url}}/assets/thumbnails/{{post.image}} class="thumbnail"}/></a>
-        <div class="date" style="font-size: smaller;">{{ post.date | date_to_string }}</div>
+{% tablerow post in site.posts  cols:4%}
+	<a href="{{ site.prefix  }}{{ post.url }}">
+		<table class="bio">
+			<tr> <td class="archive-title">{{ post.title }}</td> </tr>
+        	<tr> <td class="bio-image"> <img title={{post.title}} src={{site.github.url}}/assets/thumbnails/{{post.image}} 		class="thumbnail"}/></td></tr>
+        	<tr> <td class="date" style="font-size: smaller;">{{ post.date | date_to_string}}</td></tr>
+	    </table>
+	</a>
 {% endtablerow %}
 </table>
 </div>
