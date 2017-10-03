@@ -18,6 +18,8 @@ layout: default
 	<a href="{{ site.prefix  }}{{ post.url }}">
 		<table class="bio">
 			<tr> <td class="archive-title">{{ post.title }}</td> </tr>
+			{{site.github.url}}
+			{{site.baseurl}}
         	<tr> <td class="bio-image"> <img title={{post.title}} src={{site.github.url}}/assets/thumbnails/{{post.image}} 		class="thumbnail"}/></td></tr>
         	<tr> <td class="date" style="font-size: smaller;">{{ post.date | date_to_string}}</td></tr>
 	    </table>
