@@ -9,26 +9,26 @@
 </div>
 <br>
 <br>
-  {% capture firstpost %}
+  {%- capture firstpost -%}
     {{ page.baseurl | append: '1' | append: '.html' }}
-  {% endcapture %}
-  {%assign prevNum = page.pageNumber | minus: 1 %}
-  {% if prevNum == 0 %}
-    {% assign prevNum = 1 %}
-  {% endif %}
-  {%assign nextNum = page.pageNumber | plus: 1 %}
-  {% if nextNum > page.numPages %}
-    {% assign nextNum = page.numPages %}
-  {% endif %}
-  {% capture prev %}
+  {%- endcapture -%}
+  {%- assign prevNum = page.pageNumber | minus: 1 -%}
+  {%- if prevNum == 0 -%}
+    {%- assign prevNum = 1 -%}
+  {%- endif -%}
+  {%- assign nextNum = page.pageNumber | plus: 1 -%}
+  {%- if nextNum > page.numPages -%}
+    {%- assign nextNum = page.numPages -%}
+  {%- endif -%}
+  {%- capture prev -%}
     {{page.baseurl | append: prevNum | append: '.html'}}
-    {% endcapture %}
-  {% capture next %}
+    {%- endcapture -%}
+  {%- capture next -%}
     {{page.baseurl | append: nextNum | append: '.html'}}
-    {% endcapture %}
-  {% capture latest %}
+    {%- endcapture -%}
+  {%- capture latest -%}
     {{page.baseurl | append: page.numPages | append: '.html'}}
-    {% endcapture %}
+    {%- endcapture -%}
 
   {%assign next2 = page.baseurl | append: page.pageNumber %}
   {%assign next3 = next2 | append: '.html' %}
