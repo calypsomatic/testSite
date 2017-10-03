@@ -7,18 +7,14 @@ layout: default
 	{{page.title}}
 </div>
 <div style="display: inline;float: right;">
-	<a class="navButton" href="/index.html"> Home </a>
+	<a class="navButton" href="{{site.baseurl}}/index.html"> Home </a>
 </div>
 <br>
 <br>
-<!--https://calypsomatic.github.io/2014/05/28/Today.html-->
 
-{{site.baseurl}}
 <div style="margin-left:20px; margin-top: 20px; margin-bottom: 20px;">
 <table class="archive">
 {% tablerow post in site.posts  cols:4%}
-{{site.prefix}}
-{{post.url}}
 	<a href="{{ site.baseurl  }}{{ post.url }}">
 		<table class="bio">
 			<tr> <td class="archive-title">{{ post.title }}</td> </tr>
