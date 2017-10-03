@@ -5,7 +5,7 @@
 		<br>
  <div class="subtitle">   {{ page.title }}</div> 
   <div style="display: inline;float: right;">
-  <a class="navButton" href="/index.html"> Home </a>
+  <a class="navButton" href="{{site.baseurl}}/index.html"> Home </a>
 </div>
 <br>
 <br>
@@ -33,10 +33,6 @@
   {%assign next2 = page.baseurl | append: page.pageNumber %}
   {%assign next3 = next2 | append: '.html' %}
 <br>
-{{firstpost}}a
-{{prev}}b
-{{next}}c
-{{latest}}d
 
   {% include storyNavButtons.html %}
   <br>
