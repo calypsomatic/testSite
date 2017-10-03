@@ -1,5 +1,8 @@
 
 <div style="text-align: center">
+	{{site.baseurl}}
+	{{firstpost}}
+	{{firstpost | prepend: site.baseurl}}
  <a class="navButton" href="{{ firstpost | prepend: site.baseurl }}"> Start</a>
  <a class="navButton" href="{{ prev | prepend: site.baseurl }}"> Prev</a>
  <a class="navButton" href="{{ next | prepend: site.baseurl }}"> Next</a>
