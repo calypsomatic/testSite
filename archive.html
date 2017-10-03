@@ -19,7 +19,7 @@ layout: default
 {% tablerow post in site.posts  cols:4%}
 {{site.prefix}}
 {{post.url}}
-	<a href="{{ site.prefix  }}{{ post.url }}">
+	<a href="{{ site.baseurl  }}{{ post.url }}">
 		<table class="bio">
 			<tr> <td class="archive-title">{{ post.title }}</td> </tr>
         	<tr> <td class="bio-image"> <img title={{post.title}} src={{site.baseurl}}/assets/thumbnails/{{post.image}} 		class="thumbnail"}/></td></tr>
