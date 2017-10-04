@@ -2,6 +2,6 @@
 layout: comic
 title: Children&#039;s Book
 alt: It&#039;s a rhetorical question, kids.
-image: Children&#039;s-Book.jpeg
+image: Childrens-Book.jpeg
 comment: []
 ---
