@@ -15,8 +15,6 @@ layout: default
 <div style="margin-left:20px; margin-top: 20px; margin-bottom: 20px;">
 <table class="archive">
 {% tablerow post in site.posts  cols:4%}
-{{post.title}}
-{{post.date}}
 	<a href="{{ site.baseurl  }}{{ post.url }}">
 		<table class="bio">
 			<tr> <td class="archive-title">{{ post.title }}</td> </tr>
